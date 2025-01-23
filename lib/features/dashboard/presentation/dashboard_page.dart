@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'components/dash_appbar.dart';
+import 'components/dash_docs_overview.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -19,11 +21,7 @@ class _DashboardPageState extends State<DashboardPage> {
         color: Theme.of(context).colorScheme.onPrimary,
         child: Column(
           children: [
-            Container(
-              width: double.infinity,
-              height: 80,
-              color: Theme.of(context).colorScheme.onPrimary,
-            ),
+            DashAppbar(),
             Expanded(child: Row(
               children: [
                 Expanded(
@@ -35,14 +33,7 @@ class _DashboardPageState extends State<DashboardPage> {
                     )),
                 Expanded(
                     flex: 3,
-                    child: Container(
-                      width: double.infinity,
-                      height: double.infinity,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(32),
-                        color: Theme.of(context).scaffoldBackgroundColor,
-                      ),
-                    ))
+                    child: DashDocsOverview())
               ],
             ))
           ],
