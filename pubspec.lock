@@ -202,10 +202,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_extend
-      sha256: "56ba7b5066ee8a171247480313e38403fd211bb0d05ffa5b1e4e501f2b20320c"
+      sha256: "16f6b963d9f3ceff8b901dc102ddf63cda147aedc820856864290dce7ccd2f71"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.4"
+    version: "0.0.5"
   flutter_lints:
     dependency: "direct dev"
     description:
