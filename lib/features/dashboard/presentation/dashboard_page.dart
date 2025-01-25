@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_extend_docs/features/dashboard/presentation/components/dash_sidebar.dart';
 import 'components/dash_appbar.dart';
 import 'components/dash_docs_overview.dart';
 
@@ -26,11 +27,7 @@ class _DashboardPageState extends State<DashboardPage> {
               children: [
                 Expanded(
                     flex: 1,
-                    child: Container(
-                      width: double.infinity,
-                      height: double.infinity,
-                      color: Theme.of(context).colorScheme.onPrimary,
-                    )),
+                    child: DashSidebar()),
                 Expanded(
                     flex: 3,
                     child: DashDocsOverview())
